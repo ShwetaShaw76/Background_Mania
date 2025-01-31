@@ -89,6 +89,9 @@ nav svg{
         padding: 20px;
         display: block;
     }
+    #sidebar-active:checked ~ .links-container{
+        right: 0;
+    }
     #sidebar-active:checked ~ #overlay{
         height: 100%;
         width: 100%;
@@ -111,5 +114,68 @@ nav svg{
     justify-content: center;
 }
 .bg{
-    
+    font-size: 7vh;
+    padding: 10px;
+    display: flex;
+    max-height: 20vh;
+    width: 70vw;
+    color: brown;
+    margin: 3vh;
+    justify-content: center;
+    background-color: rgba(255 ,255, 255, 0.05);
+    border-radius: 30px;
+    backdrop-filter: blur(5px);
+    animation: lft 3s ease-in-out 3s infinite alternate-reverse;
+}
+.bg2{
+    font-size: 7vh;
+    padding: 10px;
+    display: flex;
+    width: 70vw;
+    color: crimson;
+    margin: 3vh;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 30px;
+    backdrop-filter: blur(5px);
+    animation: appear 3s ease-in-out 0s infinite alternate-reverse;
+}
+@keyframes lft {
+    from{margin: 3vh;}
+    to{margin: -100vh;}
+}
+.buttons{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.box1{
+    font-size :3vh;
+    font-family: "Roboto", sans-serif;
+    font-weight:900;
+    font-style:normal;
+    width:30vw;
+    height:30vh;
+    align-self:center;
+    margin:3vh;
+    padding:1vh;
+    border-radius: 60px;
+    border:4px solid whitesmoke;
+    background-image: url("https://wallpaperaccess.com/full/944291.jpg");
+    color: aqua;
+}
+.box2{
+    font-size:3vh;
+    background-image: url("https://th.bing.com/th/id/OIP.XlzitQh6UDoLKpks9O2rlgHaEo?rs=1&pid=ImgDetMain");
+    color:crimson;
+    font-family: "Roboto", sans-serif;
+    font-weight:900;
+    font-style:normal;
+    width:30vw;
+    height:30vh;
+    align-self:center;
+    margin:3vh;
+    padding:1vh;
+    border-radius: 60px;
+    border:4px solid whitesmoke;
 }
